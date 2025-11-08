@@ -74,6 +74,38 @@ To change theme colors, add the following lines in `params`:
   primaryColor = "#ffffff"
 ```
 
+### Favicon
+
+The template makes some assumptions with regard to the `favicon.ico`. You can use a standard `favicon.ico` with sizes like 16x16, 32x32 and 48x48 pixels but some additional icons are supported as well. This is defined in the header of `baseof.html`:
+
+```html
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+```
+
+The `site.webmanifest` is a [Web application manifest](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest), for example:
+
+```json
+{
+  "icons": [
+    {
+      "sizes": "192x192",
+      "src": "/android-chrome-192x192.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "512x512",
+      "src": "/android-chrome-512x512.png",
+      "type": "image/png"
+    }
+  ]
+}
+```
+
+All this can be placed in your Hugo's `static` folder.
+
 ### Icons
 
 This theme uses two libraries for icons:
