@@ -19,13 +19,13 @@ Main features:
 
 Create a new Hugo site:
 ```bash
-$ hugo new site [path]
+hugo new site [path]
 ```
 
 Clone this repository into `themes/` directory:
 ```bash
-$ cd [path]
-$ git clone https://github.com/bh1428/hugo-m10c-benh.git themes/hugo-m10c-benh
+git init
+git submodule add https://github.com/bh1428/hugo-m10c-benh.git themes/hugo-m10c-benh
 ```
 
 Add this line  in the `config.toml` file:
