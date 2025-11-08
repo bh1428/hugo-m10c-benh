@@ -1,0 +1,15 @@
+name = "m10c-benh"
+license = "MIT"
+licenselink = "https://github.com/bh1428/hugo-m10c-benh/blob/main/LICENSE"
+description = "A minimalistic (m10c-benh) theme for bloggers (based on m10c)"
+homepage = "https://github.com/bh1428/hugo-m10c-benh"
+tags = ["blog", "minimalistic", "minimal", "responsive", "dark"]
+features = [
+  "minimalistic blog",
+  "social icons",
+  "editable colors"
+]
+
+[author]
+  name = "bh1428"
+  homepage = "https://benhattem.nl"
