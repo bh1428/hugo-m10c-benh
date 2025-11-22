@@ -131,3 +131,4 @@ This theme is released under the [**MIT**](/LICENSE) License.
 - [Feather](https://feathericons.com/) - [MIT](https://github.com/feathericons/feather/blob/master/LICENSE)
 - [Simple Icons](https://simpleicons.org) - [CC0 1.0](https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md)
 - [vaga/hugo-theme-m10c](https://github.com/vaga/hugo-theme-m10c) - [MIT](https://github.com/vaga/hugo-theme-m10c/blob/master/LICENSE.md)
+- [`code.html` shortcode by oodavid](https://stackoverflow.com/a/45421343) - [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
