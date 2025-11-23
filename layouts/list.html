@@ -12,6 +12,15 @@
             <span class="posts-list-item-separator">-</span>
             {{ partial "icon.html" (dict "ctx" $ "name" "clock") }}
             {{ .ReadingTime }} min read
+            <span class="posts-list-item-separator">-</span>
+            {{- with .Params.tags }}
+              {{ partial "icon.html" (dict "ctx" $ "name" "tag") }}
+              {{- range . -}}
+                {{ with $.Site.GetPage (printf "/%s/%s" "tags" . ) }}
+                  <a class="tag" href="{{ .RelPermalink }}">{{ lower .Title }}</a>
+                {{- end }}
+              {{- end }}
+            {{- end }}
           </span>
           <a class="posts-list-item-summary" href="{{ .RelPermalink }}">
             {{ .Summary | plainify }}
