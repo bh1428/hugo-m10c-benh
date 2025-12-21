@@ -42,7 +42,7 @@
 
 .app-footer {
   font-size: 0.8em;
-  padding: 2.5rem;
+  padding: 0 2.5rem 2.5rem 2.5rem;
   background: $darkest-color;
   color: darken(desaturate($light-color, 20%), 20%);
 }
