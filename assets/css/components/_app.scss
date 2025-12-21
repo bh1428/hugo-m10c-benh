@@ -44,11 +44,16 @@
   font-size: 0.8em;
   padding: 0 2.5rem 2.5rem 2.5rem;
   background: $darkest-color;
-  color: darken(desaturate($light-color, 20%), 20%);
+  color: darken(desaturate($light-color, $footer-desaturate), $footer-darken);
 }
 
 .app-footer a {
-  color: darken(desaturate($primary-color, 20%), 10%);
+  color: darken(desaturate($primary-color, $footer-desaturate), $footer-darken-a);
+  transition: color 0.35s;
+  
+  &:hover {
+    color: darken(desaturate($lightest-color, $footer-desaturate), $footer-darken-a);
+  }
 }
 
 @media (min-width: 940px) {

@@ -3,6 +3,9 @@ $darkest-color: {{ .Site.Params.style.darkestColor | default "#1c2526" }};
 $light-color: {{ .Site.Params.style.lightColor | default "#87b177" }};
 $lightest-color: {{ .Site.Params.style.lightestColor | default "#dddddd" }};
 $primary-color: {{ .Site.Params.style.primaryColor | default "#c8c42a" }};
+$footer-desaturate: 20%;
+$footer-darken: 20%;
+$footer-darken-a: 10%;
 
 @import 'base';
 
