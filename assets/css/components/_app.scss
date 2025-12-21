@@ -36,6 +36,17 @@
   font-weight: bold;
 }
 
+.app-container {
+  padding: 2.5rem;
+}
+
+.app-footer {
+  font-size: 0.8em;
+  padding: 2.5rem;
+  background: $darkest-color;
+  color: darken(desaturate($light-color, 20%), 20%);
+}
+
 @media (min-width: 940px) {
   .app-header {
     position: fixed;
@@ -46,6 +57,11 @@
   }
 
   .app-container {
+    max-width: 65rem;
+    margin-left: 20rem;
+  }
+
+  .app-footer {
     max-width: 65rem;
     margin-left: 20rem;
   }
